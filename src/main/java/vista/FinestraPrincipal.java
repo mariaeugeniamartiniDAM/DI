@@ -321,15 +321,14 @@ public class FinestraPrincipal extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.util.Locale.setDefault(Textes.LOCALE_CA_ES);
 
-        /* Set the FlatLaf look and feel (el mateix tema modern que el preview de NetBeans) */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         try {
             FlatLightLaf.setup();
         } catch (RuntimeException ex) {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
+        Textes.aplicarTextosSwing();
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new FinestraPrincipal().setVisible(true));
     }

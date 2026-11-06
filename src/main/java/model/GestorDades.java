@@ -93,7 +93,7 @@ public final class GestorDades {
     }
 
     /**
-     * Lloguers ordenats pel número de registre de més gran a més petit.
+     * Lloguers ordenats pel número de registre en ordre descendent.
      */
     public List<Lloguer> getLloguersOrdenatsDesc() {
         List<Lloguer> copia = new ArrayList<>(lloguers);

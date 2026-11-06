@@ -101,6 +101,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Esborrar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoEsborrarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
